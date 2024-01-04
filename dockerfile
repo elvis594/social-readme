@@ -39,10 +39,11 @@ ENV PATH="${PATH}:/root/.local/bin" \
     PIP_DEFAULT_TIMEOUT=100
 
 # copy project files
-COPY --chown=root:root pyproject.toml main.py /app/
+# COPY --chown=root:root pyproject.toml main.py /app/
 
 # install dependencies
-RUN python -m pip install /app/
+# RUN python -m pip install /app/
+RUN echo "hello world"
 
 # execute program
 # CMD python /app/main.py
