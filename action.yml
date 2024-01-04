@@ -8,10 +8,6 @@ inputs:
     default: ${{ github.token }}
     required: true
 
-    SHOW_TIME:
-    description: "Displays the amount of time spent for each language"
-    default: "true"
-    required: true
 #   repository:
 #     description: "Your GitHub repository"
 #     default: ${{ github.repository }}
