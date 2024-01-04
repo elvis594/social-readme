@@ -3,10 +3,10 @@ author: elvis
 description: "Add social feed in your Readme"
 
 inputs:
-  gh_token:
-    description: "GitHub access token with Repo scope"
-    default: ${{ github.token }}
-    required: true
+  # gh_token:
+  #   description: "GitHub access token with Repo scope"
+  #   default: ${{ github.token }}
+  #   required: true
 
 #   repository:
 #     description: "Your GitHub repository"
