@@ -1,7 +1,6 @@
 name: "social-readme"
 author: elvis
 description: "Add social feed in your Readme"
-on: [push]
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
