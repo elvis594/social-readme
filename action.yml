@@ -18,9 +18,9 @@ inputs:
     default: "Updated social rss by social-readme"
     required: false
 
-runs:
-  using: "docker"
-  image: "Dockerfile"
+# runs:
+#   using: "docker"
+#   image: "Dockerfile"
 
 branding:
   icon: "aperture"
