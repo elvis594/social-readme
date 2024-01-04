@@ -40,10 +40,10 @@ ENV PATH="${PATH}:/root/.local/bin" \
 
 # copy project files
 # COPY --chown=root:root pyproject.toml main.py /app/
+COPY --chown=root:root main.py /app/
 
 # install dependencies
-# RUN python -m pip install /app/
-RUN echo "hello world"
+RUN python -m pip install /app/
 
 # execute program
-# CMD python /app/main.py
+CMD python /app/main.py
