@@ -5,7 +5,9 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - name: Run local action
-        uses: ./
+      # This step checks out a copy of your repository.
+      - uses: actions/checkout@v4
+      # This step references the directory that contains the action.
+      - uses: ./
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
 
