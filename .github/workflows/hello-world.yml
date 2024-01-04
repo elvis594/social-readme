@@ -8,6 +8,7 @@ jobs:
       # This step checks out a copy of your repository.
       - uses: actions/checkout@v4
       # This step references the directory that contains the action.
-      - uses: ./
+      - name: use local action
+        uses: ./
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
 
