@@ -5,6 +5,8 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - uses: ../
+      - uses: actions/checkout@v2 # 确保这一步在使用本地 Action 之前
+      - name: Run local action
+        uses: ./
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
 
