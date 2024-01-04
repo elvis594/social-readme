@@ -45,4 +45,4 @@ COPY --chown=root:root pyproject.toml main.py /app/
 RUN python -m pip install /app/
 
 # execute program
-CMD python /app/main.py
+# CMD python /app/main.py
