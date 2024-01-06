@@ -1,5 +1,5 @@
 feedparser
 PyGithub
 datetime
-requests
-logging
+# requests
+# logging
