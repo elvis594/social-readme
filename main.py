@@ -15,11 +15,11 @@ FILE_PATH = os.getenv("INPUT_FILE_PATH")
 
 BILIBILI_ID = os.getenv("INPUT_BILIBILI_ID")
 
-BILIBILI_LIMIT = os.getenv("INPUT_BILIBILI_LIMIT")
+BILIBILI_LIMIT = int(os.getenv("INPUT_BILIBILI_LIMIT"))
 
 DOUBAN_ID = os.getenv("INPUT_DOUBAN_ID")
 
-DOUBAN_LIMIT = os.getenv("INPUT_DOUBAN_LIMIT")
+DOUBAN_LIMIT = int(os.getenv("INPUT_DOUBAN_LIMIT"))
 
 def decode_readme(data: str) -> str:
     """Decode the contents of old readme"""
