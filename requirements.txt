@@ -2,4 +2,3 @@ feedparser
 PyGithub
 datetime
 requests
-logging
