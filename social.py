@@ -1,6 +1,7 @@
 import tools
 import feedparser
-RSS_HUB_LINK = "https://rss.shab.fun"
+import os
+RSS_HUB_LINK = str(os.getenv("INPUT_RSS_HUB_LINK"))
 
 BILIBILI_START_COMMENT = '<!-- START_SECTION:bilibili -->'
 BILIBILI_END_COMMENT = '<!-- END_SECTION:bilibili -->'

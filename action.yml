@@ -40,6 +40,10 @@ inputs:
     default: "5"
     required: false
 
+  rss_hub_link:
+    description: "rss_hub_link: rsshub sever."
+    default: "https://rss.shab.fun"
+    required: false
 runs:
   using: "docker"
   image: "dockerfile"
