@@ -1,3 +1,6 @@
+#FROM DOCKERio build rsshub
+FROM diygod/rsshub
+
 # FROM docker.io/python:3-slim
 FROM python:latest
 

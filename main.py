@@ -66,6 +66,11 @@ if __name__ == "__main__":
         print("DOUBAN_ID:" + BILIBILI_ID)
         print("DOUBAN_LIMIT:" + str(DOUBAN_LIMIT))
         new_readme = social.generate_douban(DOUBAN_ID, DOUBAN_LIMIT, new_readme)
+    
+    if DOUBAN_ID is not None and len(DOUBAN_ID.strip()) > 0 and DOUBAN_LIMIT > 0:
+        print("DOUBAN_ID:" + BILIBILI_ID)
+        print("DOUBAN_LIMIT:" + str(DOUBAN_LIMIT))
+        new_readme = social.generate_zhihu_dynamic('594-26', DOUBAN_LIMIT, new_readme)
 
     if new_readme == old_readme:
         print("nothing changed")
