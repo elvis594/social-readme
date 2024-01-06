@@ -57,10 +57,10 @@ if __name__ == "__main__":
     #     print("BLOG_LIMIT:" + str(BLOG_LIMIT))
     #     new_readme = social.generate_blog(BLOG_RSS_LINK, BLOG_LIMIT, new_readme)
 
-    # if BILIBILI_ID is not None and len(BILIBILI_ID.strip()) > 0 and BILIBILI_LIMIT > 0:
-    #     print("BILIBILI_ID:" + BILIBILI_ID)
-    #     print("BILIBILI_LIMIT:" + str(BILIBILI_LIMIT))
-    #     new_readme = social.generate_bilibili_dynamic(BILIBILI_ID, BILIBILI_LIMIT, new_readme)
+    if BILIBILI_ID is not None and len(BILIBILI_ID.strip()) > 0 and BILIBILI_LIMIT > 0:
+        print("BILIBILI_ID:" + BILIBILI_ID)
+        print("BILIBILI_LIMIT:" + str(BILIBILI_LIMIT))
+        new_readme = social.generate_bilibili_dynamic(BILIBILI_ID, BILIBILI_LIMIT, new_readme)
 
     if DOUBAN_ID is not None and len(DOUBAN_ID.strip()) > 0 and DOUBAN_LIMIT > 0:
         print("DOUBAN_ID:" + BILIBILI_ID)
