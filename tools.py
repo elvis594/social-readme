@@ -37,7 +37,7 @@ def generate_entries(rss_hub_link,route,params) -> str:
     return fetch_feed_with_retries_and_timeout(rss_hub_link + route + params, timeout=5, max_retries=2)
 
 def fetch_feed_with_retries_and_timeout(url, timeout, max_retries):
-    logging.info(f"Fetching RSS feed from {url}")
+    print(f"Fetching RSS feed from {url}")
     session = requests.Session()
     retries = Retry(total=max_retries, backoff_factor=1, status_forcelist=[500, 502, 503, 504])
     session.mount('http://', HTTPAdapter(max_retries=retries))
@@ -47,7 +47,7 @@ def fetch_feed_with_retries_and_timeout(url, timeout, max_retries):
         response.raise_for_status()  # 检查响应状态
         return feedparser.parse(response.content)["entries"]
     except requests.exceptions.RequestException as e:
-        logging.error(f"Error fetching the RSS feed: {e}")
+        print(f"Error fetching the RSS feed: {e}")
         return None
     
 def generate_rating_star(desc) -> str:
