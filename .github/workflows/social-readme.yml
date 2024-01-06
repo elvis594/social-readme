@@ -15,6 +15,6 @@ jobs:
         with:
           douban_id: '186240167'
           bilibili_id: '1802901'
-          rss_hub_link: 'localhost'
+          rss_hub_link: '127.0.0.1'
 
 
