@@ -21,6 +21,11 @@ DOUBAN_ID = os.getenv("INPUT_DOUBAN_ID")
 
 DOUBAN_LIMIT = int(os.getenv("INPUT_DOUBAN_LIMIT"))
 
+
+ZHIHU_ID = os.getenv("INPUT_ZHIHU_ID")
+
+ZHIHU_LIMIT = int(os.getenv("INPUT_ZHIHU_LIMIT"))
+
 def decode_readme(data: str) -> str:
     """Decode the contents of old readme"""
     decoded_bytes = base64.b64decode(data)
@@ -67,6 +72,11 @@ if __name__ == "__main__":
         print("DOUBAN_LIMIT:" + str(DOUBAN_LIMIT))
         new_readme = social.generate_douban(DOUBAN_ID, DOUBAN_LIMIT, new_readme)
     
+    if ZHIHU_ID is not None and len(ZHIHU_ID.strip()) > 0 and ZHIHU_LIMIT > 0:
+        print("知乎_ID:" + BILIBILI_ID)
+        print("知乎_LIMIT:" + str(ZHIHU_LIMIT))
+        new_readme = social.generate_zhihu_dynamic(ZHIHU_ID, ZHIHU_ID, new_readme)
+
     if new_readme == old_readme:
         print("nothing changed")
     else:

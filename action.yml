@@ -40,10 +40,20 @@ inputs:
     default: "5"
     required: false
 
+  zhihu_id:
+    description: "get zhihu dynamics need."
+    required: false
+
+  zhihu_limit:
+    description: "Your Blog LIMIT"
+    default: "5"
+    required: false
+
   rss_hub_link:
     description: "rss_hub_link: rsshub sever."
     default: "https://rss.shab.fun"
     required: false
+ 
 runs:
   using: "docker"
   image: "dockerfile"
