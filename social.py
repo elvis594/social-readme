@@ -2,6 +2,7 @@ import tools
 import feedparser
 import os
 RSS_HUB_LINK = str(os.getenv("INPUT_RSS_HUB_LINK"))
+# RSS_HUB_LINK = "http://8.134.95.44:1200"
 
 BILIBILI_START_COMMENT = '<!-- START_SECTION:bilibili -->'
 BILIBILI_END_COMMENT = '<!-- END_SECTION:bilibili -->'

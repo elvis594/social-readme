@@ -75,7 +75,7 @@ if __name__ == "__main__":
     if ZHIHU_ID is not None and len(ZHIHU_ID.strip()) > 0 and ZHIHU_LIMIT > 0:
         print("知乎_ID:" + BILIBILI_ID)
         print("知乎_LIMIT:" + str(ZHIHU_LIMIT))
-        new_readme = social.generate_zhihu_dynamic(ZHIHU_ID, ZHIHU_ID, new_readme)
+        new_readme = social.generate_zhihu_dynamic(ZHIHU_ID, ZHIHU_LIMIT, new_readme)
 
     if new_readme == old_readme:
         print("nothing changed")
