@@ -15,7 +15,7 @@ jobs:
         with:
           douban_id: '186240167'
           bilibili_id: '1802901'
-          rss_hub_link: 'http://8.134.95.44:1200/'
+          rss_hub_link: 'http://8.134.95.44:1200'
           zhihu_id: '594-26'
 
 
